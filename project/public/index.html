@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candle Pattern Probability Analyzer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Candle Pattern Probability Analyzer</h1>
+      <p class="subtle">Analyze next-candle behavior after custom multi-candle patterns.</p>
+
+      <section class="panel">
+        <div class="section-header">
+          <h2>Candle Sequence Builder</h2>
+          <div class="controls">
+            <button id="addCandleBtn" type="button">Add Candle</button>
+            <button id="removeCandleBtn" type="button">Remove Candle</button>
+          </div>
+        </div>
+        <div id="builder" class="builder"></div>
+      </section>
+
+      <section class="panel">
+        <h2>Visual Candle Display</h2>
+        <div id="visualDisplay" class="visual-display"></div>
+        <p id="nextBias" class="next-bias">NEXT bias: N/A</p>
+      </section>
+
+      <section class="panel">
+        <h2>Results Panel</h2>
+        <div class="run-row">
+          <button id="runAnalysisBtn" type="button" class="run-btn">Run Analysis</button>
+          <span id="statusText" class="status-text"></span>
+        </div>
+        <div id="errorBox" class="error hidden"></div>
+        <div id="sampleBox" class="sample-box">Sample size: -</div>
+        <div id="resultsGrid" class="results-grid"></div>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
